@@ -3,22 +3,41 @@ import java.util.Scanner;
 
 public class Question {
 
+	Question question = new Question();
 	Scanner scanner = new Scanner(System.in);
 	Random random = new Random();
-
+	int value;
+	public void dft_set() {
+		System.out.println("\n" + "\n" + "1을 입력하면 1학기 중간고사/ 2을 입력하면 1학기 기말고사");
+		question.value = scanner.nextInt();
+		if (value > 2 || value < 1) {
+			dft_set();
+		}
+	}
+	
 	public void start() {
 		System.out.println("\n" + "\n" + "1을 입력하면 문제출력 / 0을 입력하면 종료");
 		int a = scanner.nextInt();
 
 		if (a == 1) {
-			quest();
+			switch (value) {
+			case 1:
+				quest1();
+				break;
+				
+			case 2:
+				quest2();
+				
+			default:
+				break;
+			}
 		} else if (a == 0) {
 			System.out.println("끝났습니다.");
 		}
 
 	}
 
-	private void quest() {
+	private void quest1() {
 		int n = random.nextInt(19) + 1;
 
 		switch (n) {
@@ -99,6 +118,174 @@ public class Question {
 			break;
 
 		}
+	}
+	
+	private void quest2() {
+		int n = random.nextInt(19) + 1;
+
+		switch (n) {
+		case 1:
+			question1();
+			break;
+
+		case 2:
+			question2();
+			break;
+
+		case 3:
+			question3();
+			break;
+
+		case 4:
+			question4();
+			break;
+
+		case 5:
+			question5();
+			break;
+
+		case 6:
+			question6();
+			break;
+
+		case 7:
+			question7();
+			break;
+
+		case 8:
+			question8();
+			break;
+
+		case 9:
+			question9();
+			break;
+
+		case 10:
+			question10();
+			break;
+
+		case 11:
+			question20();
+			break;
+
+		case 12:
+			question21();
+			break;
+
+		case 13:
+			question22();
+			break;
+
+		case 14:
+			question23();
+			break;
+
+		case 15:
+			question24();
+			break;
+
+		case 16:
+			question25();
+			break;
+
+		case 17:
+			question26();
+			break;
+
+		case 18:
+			question27();
+			break;
+
+		case 19:
+			question28();
+			break;
+
+		}
+	}
+
+	private void question28() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void question27() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void question26() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void question25() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void question24() {
+		System.out.println("다음중 아빠를 뜻하는것은?");
+		System.out.println("----------------------");
+		System.out.println("1.かあさん / 2.2명 / 3.3명  / 4.4명 / 5.5명");
+		int a = scanner.nextInt();
+		if (a == 3) {
+			System.out.println("정답!");
+		} else {
+			System.out.println("오답! (답은 3번)");
+		}
+		start();
+	}
+
+	private void question23() {
+		System.out.println("にほん의 뜻?");
+		System.out.println("----------------------");
+		System.out.println("1.2개/ 2.책 2개 / 3.일본");
+		int a = scanner.nextInt();
+		if (a == 3) {
+			System.out.println("정답!");
+		} else {
+			System.out.println("오답! (답은 3번)");
+		}
+		start();
+	}
+
+	private void question22() {
+		System.out.println("한국을 히라가나로 하면");
+		System.out.println("----------------------");
+		System.out.println("1.ちゅうごく/ 2.かんこく / 3.にほん");
+		int a = scanner.nextInt();
+		if (a == 2) {
+			System.out.println("정답!");
+		} else {
+			System.out.println("오답! (답은 2번)");
+		}
+		start();
+	}
+
+	private void question21() {
+		System.out.println("ふたり의 뜻?");
+		System.out.println("----------------------");
+		System.out.println("1.1명 / 2.2명 / 3.3명  / 4.4명 / 5.5명");
+		int a = scanner.nextInt();
+		if (a == 2) {
+			System.out.println("정답!");
+		} else {
+			System.out.println("오답! (답은 2번)");
+		}
+		start();
+	}
+
+	private void question20() {
+		System.out.println("3명을 히라가나로 하면?");
+		System.out.println("----------------------");
+		System.out.println("1.さんにん / 2.ひとり / 3.よにん  / 4.ふたり / 5.ごにん");
+		int a = scanner.nextInt();
+		if (a == 1) {
+			System.out.println("정답!");
+		} else {
+			System.out.println("오답! (답은 1번)");
+		}
+		start();
 	}
 
 	private void question19() {
