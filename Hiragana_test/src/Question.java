@@ -219,19 +219,27 @@ public class Question {
 	}
 
 	private void question25() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("ぶかつ가 뜻하는것은?");
+		System.out.println("----------------------");
+		System.out.println("단답형");
+		String a = scanner.next();
+		if (a == "동아리활동") {
+			System.out.println("정답!");
+		} else {
+			System.out.println("오답! (답은 동아리활동)");
+		}
+		start();
 	}
 
 	private void question24() {
-		System.out.println("다음중 아빠를 뜻하는것은?");
+		System.out.println("다음중 (상대방의)아빠를 뜻하는것은?");
 		System.out.println("----------------------");
-		System.out.println("1.かあさん / 2.2명 / 3.3명  / 4.4명 / 5.5명");
+		System.out.println("1.かあさん / 2.おとうさん / 3.おねさん  / 4.おとうとさん / 5.いもうとさん");
 		int a = scanner.nextInt();
-		if (a == 3) {
+		if (a == 2) {
 			System.out.println("정답!");
 		} else {
-			System.out.println("오답! (답은 3번)");
+			System.out.println("오답! (답은 2번)");
 		}
 		start();
 	}
